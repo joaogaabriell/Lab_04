@@ -20,6 +20,14 @@ public class Filme {
         this.elenco = new ArrayList<>();
     }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
     public void adicionarPessoaAoElenco(Pessoa pessoa) {
         elenco.add(pessoa);
     }
@@ -32,6 +40,7 @@ public class Filme {
         System.out.println("Trilha Sonora: " + trilhaSonora);
         System.out.println("Elenco: ");
         for (Pessoa pessoa : elenco) {
+            System.out.println(pessoa.getNome());
             pessoa.exibirFuncoes();
         }
     }

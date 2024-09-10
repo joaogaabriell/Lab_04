@@ -6,10 +6,12 @@ import java.util.List;
 public class Pessoa {
     private String nome;
     private List<Funcao> funcoes;
+    private List<String> filmografia;
 
     public Pessoa(String nome) {
         this.nome = nome;
         this.funcoes = new ArrayList<>();
+        this.filmografia = new ArrayList<>();
     }
 
     public void adicionarFuncao(Funcao funcao) {
@@ -29,5 +31,12 @@ public class Pessoa {
 
     public List<Funcao> getFuncoes() {
         return funcoes;
+    }
+
+    public void exibirFilmografia() {
+        System.out.println("Filmografia de " + nome + ":");
+        for (String registro : filmografia) {
+            System.out.println(registro);
+        }
     }
 }
