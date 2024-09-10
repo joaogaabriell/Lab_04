@@ -1,14 +1,14 @@
 package Laboratorio_04;
 
 public class Ator implements Funcao {
-    private String nomePersonagem;
+    private String papel;
 
-    public Ator(String nomePersonagem) {
-        this.nomePersonagem = nomePersonagem;
+    public Ator(String papel) {
+        this.papel = papel;
     }
 
     @Override
     public String getDescricao() {
-        return "Ator - Personagem: " + nomePersonagem;
+        return "Ator: " + papel;
     }
 }

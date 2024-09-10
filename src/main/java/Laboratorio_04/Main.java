@@ -2,23 +2,29 @@ package Laboratorio_04;
 
 public class Main {
     public static void main(String[] args) {
+        // Criando funções
+        Funcao ator1 = new Ator("Protagonista");
+        Funcao ator2 = new Ator("Antagonista");
+        Funcao diretor = new Diretor();
+        Funcao roteirista = new Roteirista();
+
         // Criando pessoas
-        Pessoa ator1 = new Pessoa("Carlos Silva");
-        ator1.adicionarFuncao(new Ator("Protagonista"));
+        Pessoa pessoaAtor1 = new Pessoa("Carlos Silva");
+        pessoaAtor1.adicionarFuncao(ator1);
 
-        Pessoa ator2 = new Pessoa("Maria Souza");
-        ator2.adicionarFuncao(new Ator("Antagonista"));
+        Pessoa pessoaAtor2 = new Pessoa("Maria Souza");
+        pessoaAtor2.adicionarFuncao(ator2);
 
-        Pessoa diretor = new Pessoa("João Mendes");
-        diretor.adicionarFuncao(new Diretor());
+        Pessoa pessoaDiretor = new Pessoa("João Mendes");
+        pessoaDiretor.adicionarFuncao(diretor);
 
-        Pessoa roteirista = new Pessoa("Ana Lima");
-        roteirista.adicionarFuncao(new Roteirista());
+        Pessoa pessoaRoteirista = new Pessoa("Ana Lima");
+        pessoaRoteirista.adicionarFuncao(roteirista);
 
         // Criando filme
-        Filme filme = new Filme("Aventura na Selva", 2023, diretor, roteirista, "Trilha Sonora 1");
-        filme.adicionarPessoaAoElenco(ator1);
-        filme.adicionarPessoaAoElenco(ator2);
+        Filme filme = new Filme("Aventura na Selva", 2023, pessoaDiretor, pessoaRoteirista, "Trilha Sonora 1");
+        filme.adicionarPessoaAoElenco(pessoaAtor1);
+        filme.adicionarPessoaAoElenco(pessoaAtor2);
 
         // Exibindo detalhes do filme
         filme.exibirDetalhes();
