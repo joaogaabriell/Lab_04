@@ -7,6 +7,7 @@ public class Main {
         Funcao ator2 = new Ator("Antagonista");
         Funcao diretor = new Diretor();
         Funcao roteirista = new Roteirista();
+        Funcao cinegrafista = new Cinegrafista();
 
         // Criando pessoas
         Pessoa pessoaAtor1 = new Pessoa("Carlos Silva");
@@ -21,10 +22,14 @@ public class Main {
         Pessoa pessoaRoteirista = new Pessoa("Ana Lima");
         pessoaRoteirista.adicionarFuncao(roteirista);
 
+        Pessoa pessoaCinegrafista = new Pessoa("Pedro Almeida");
+        pessoaCinegrafista.adicionarFuncao(cinegrafista);
+
         // Criando filme
         Filme filme = new Filme("Aventura na Selva", 2023, pessoaDiretor, pessoaRoteirista, "Trilha Sonora 1");
         filme.adicionarPessoaAoElenco(pessoaAtor1);
         filme.adicionarPessoaAoElenco(pessoaAtor2);
+        filme.adicionarPessoaAoElenco(pessoaCinegrafista);
 
         // Exibindo detalhes do filme
         filme.exibirDetalhes();
