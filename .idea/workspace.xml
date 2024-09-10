@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9892252d-3482-4c02-b859-e9d775e6ecbb" name="Changes" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Laboratorio_04/Ator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Laboratorio_04/Ator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Laboratorio_04/Diretor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Laboratorio_04/Diretor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Laboratorio_04/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Laboratorio_04/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Laboratorio_04/Roteirista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Laboratorio_04/Roteirista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FilmeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FilmeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FuncoesTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PessoaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PessoaTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="9892252d-3482-4c02-b859-e9d775e6ecbb" name="Changes" comment="Implementações das clasees test e correções" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +34,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.AtorTest.executor": "Run",
     "JUnit.FilmeTest.executor": "Run",
     "JUnit.FuncoesTest.executor": "Run",
     "JUnit.PessoaTest.executor": "Run",
@@ -66,7 +58,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AtorTest">
+  <component name="RunManager" selected="JUnit.FilmeTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Laboratorio_04.Main" />
       <module name="Lab_04" />
@@ -142,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FilmeTest" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AtorTest" />
         <item itemvalue="JUnit.FuncoesTest" />
         <item itemvalue="JUnit.PessoaTest" />
-        <item itemvalue="JUnit.FilmeTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +167,7 @@
       <workItem from="1725564414047" duration="59000" />
       <workItem from="1725564484483" duration="324000" />
       <workItem from="1725572227425" duration="1354000" />
-      <workItem from="1725930638153" duration="938000" />
+      <workItem from="1725930638153" duration="1242000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -193,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725930725475</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implementações das clasees test e correções">
+      <option name="closed" value="true" />
+      <created>1725931665296</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725931665296</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implementações das clasees test e correções">
+      <option name="closed" value="true" />
+      <created>1725931827663</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725931827663</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,17 +209,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Laboratorio_04/Main.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Implementações das clasees test e correções" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementações das clasees test e correções" />
   </component>
 </project>
