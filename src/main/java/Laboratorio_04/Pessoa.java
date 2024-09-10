@@ -26,4 +26,8 @@ public class Pessoa {
     public String getNome() {
         return nome;
     }
+
+    public List<Funcao> getFuncoes() {
+        return funcoes;
+    }
 }
