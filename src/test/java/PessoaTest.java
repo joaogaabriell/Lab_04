@@ -12,7 +12,7 @@ public class PessoaTest {
         pessoa.adicionarFuncao(ator);
 
         assertEquals(1, pessoa.getFuncoes().size());
-        assertEquals("Ator: Protagonista", pessoa.getFuncoes().get(0).getDescricao());
+        assertEquals("Ator Protagonista", pessoa.getFuncoes().get(0).getDescricao());
     }
 
     @Test

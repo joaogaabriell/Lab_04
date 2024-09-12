@@ -1,7 +1,7 @@
 package Laboratorio_04;
 
 public class Ator implements Funcao {
-    private String papel;
+    private final String papel;
 
     public Ator(String papel) {
         this.papel = papel;
@@ -9,6 +9,6 @@ public class Ator implements Funcao {
 
     @Override
     public String getDescricao() {
-        return "Ator: " + papel;
+        return "Ator " + papel;
     }
 }

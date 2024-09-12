@@ -2,36 +2,38 @@ package Laboratorio_04;
 
 public class CriandoOFilme {
     public static void main(String[] args) {
-        // Criando pessoas
-        Pessoa ator1 = new Pessoa("Carlos Silva");
-        Pessoa ator2 = new Pessoa("Maria Souza");
-        Pessoa diretor = new Pessoa("João Mendes");
-        Pessoa cinegrafista = new Pessoa("Lucas Oliveira");
-        Pessoa roteirista1 = new Pessoa("Ana Lima");
-        Pessoa roteirista2 = new Pessoa("Pedro Gonçalves");
 
-        // Criando filme 1
-        Filme filme1 = new Filme("Aventura na Selva", 2023, diretor, roteirista1, "Trilha Sonora 1");
-//        ator1.adicionarFuncao(new Ator("Protagonista"), filme1);
-//        ator2.adicionarFuncao(new Ator("Antagonista"), filme1);
-//        diretor.adicionarFuncao(new Diretor(), filme1);
-//        cinegrafista.adicionarFuncao(new Cinegrafista(), filme1);
-        filme1.adicionarPessoaAoElenco(ator1);
-        filme1.adicionarPessoaAoElenco(cinegrafista);
+        Pessoa pessoa1 = new Pessoa("Carlos Silva");
+        Pessoa pessoa2 = new Pessoa("Maria Souza");
+        Pessoa pessoa3 = new Pessoa("Joao Mendes");
+        Pessoa pessoa4 = new Pessoa("Ana Lima");
+        Pessoa pessoa5 = new Pessoa("Pedro Almeida");
 
-        // Criando filme 2
-        Filme filme2 = new Filme("Missão no Deserto", 2022, diretor, roteirista2, "Trilha Sonora 2");
-//        ator1.adicionarFuncao(new Ator("Co-protagonista"), filme2);
-//        diretor.adicionarFuncao(new Diretor(), filme2);
-//        cinegrafista.adicionarFuncao(new Cinegrafista(), filme2);
-        filme2.adicionarPessoaAoElenco(ator1);
+        pessoa1.adicionarFuncao(new Ator("Protagonista"));
+        pessoa1.adicionarFuncao(new Roteirista());
+        pessoa2.adicionarFuncao(new Ator("Antagonista"));
+        pessoa3.adicionarFuncao(new Diretor());
+        pessoa4.adicionarFuncao(new Roteirista());
+        pessoa5.adicionarFuncao(new Cinegrafista());
 
-        // Exibindo detalhes dos filmes
-        filme1.exibirDetalhes();
-        filme2.exibirDetalhes();
+        Filme filme = new Filme("Aventura na Selva", 2023, pessoa3, pessoa4, "Trilha Sonora 1");
+        filme.adicionarPessoaAoElenco(pessoa1);
+        filme.adicionarPessoaAoElenco(pessoa2);
+        filme.adicionarPessoaAoElenco(pessoa5);
 
-        // Exibindo a filmografia de uma pessoa
-        ator1.exibirFilmografia();
-        diretor.exibirFilmografia();
+        pessoa1.adicionarFilme(filme);
+        pessoa2.adicionarFilme(filme);
+        pessoa3.adicionarFilme(filme);
+        pessoa4.adicionarFilme(filme);
+        pessoa5.adicionarFilme(filme);
+
+        filme.exibirDetalhes();
+
+        System.out.println("\nFilmografias:");
+        pessoa1.exibirFilmografia();
+        pessoa2.exibirFilmografia();
+        pessoa3.exibirFilmografia();
+        pessoa4.exibirFilmografia();
+        pessoa5.exibirFilmografia();
     }
 }

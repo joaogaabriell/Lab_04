@@ -8,6 +8,6 @@ public class AtorTest {
     @Test
     public void testGetDescricao() {
         Funcao ator = new Ator("Protagonista");
-        assertEquals("Ator: Protagonista", ator.getDescricao());
+        assertEquals("Ator Protagonista", ator.getDescricao());
     }
 }

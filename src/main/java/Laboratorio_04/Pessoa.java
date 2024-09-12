@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pessoa {
-    private String nome;
-    private List<Funcao> funcoes;
-    private List<String> filmografia;
+    private final String nome;
+    private final List<Funcao> funcoes;
+    private final List<Filme> filmografia;
 
     public Pessoa(String nome) {
         this.nome = nome;
@@ -16,6 +16,10 @@ public class Pessoa {
 
     public void adicionarFuncao(Funcao funcao) {
         funcoes.add(funcao);
+    }
+
+    public void adicionarFilme(Filme filme) {
+        filmografia.add(filme);
     }
 
     public void exibirFuncoes() {
@@ -35,8 +39,11 @@ public class Pessoa {
 
     public void exibirFilmografia() {
         System.out.println("Filmografia de " + nome + ":");
-        for (String registro : filmografia) {
-            System.out.println(registro);
+        for (Filme filme : filmografia) {
+            System.out.println("- " + filme.getTitulo() + " (" + filme.getAno() + ")");
+            for (Funcao funcao : funcoes) {
+                System.out.println("  Funcao: " + funcao.getDescricao());
+            }
         }
     }
 }

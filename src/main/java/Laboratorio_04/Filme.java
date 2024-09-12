@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Filme {
-    private String titulo;
-    private int ano;
-    private Pessoa diretor;
-    private Pessoa roteirista;
-    private List<Pessoa> elenco;
-    private String trilhaSonora;
+    private final String titulo;
+    private final int ano;
+    private final Pessoa diretor;
+    private final Pessoa roteirista;
+    private final List<Pessoa> elenco;
+    private final String trilhaSonora;
 
     public Filme(String titulo, int ano, Pessoa diretor, Pessoa roteirista, String trilhaSonora) {
         this.titulo = titulo;
@@ -33,14 +33,13 @@ public class Filme {
     }
 
     public void exibirDetalhes() {
-        System.out.println("Título: " + titulo);
+        System.out.println("Titulo: " + titulo);
         System.out.println("Ano: " + ano);
         System.out.println("Diretor: " + diretor.getNome());
         System.out.println("Roteirista: " + roteirista.getNome());
         System.out.println("Trilha Sonora: " + trilhaSonora);
         System.out.println("Elenco: ");
         for (Pessoa pessoa : elenco) {
-            System.out.println(pessoa.getNome());
             pessoa.exibirFuncoes();
         }
     }
