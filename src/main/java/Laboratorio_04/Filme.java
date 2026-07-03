@@ -1,6 +1,7 @@
 package Laboratorio_04;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Filme {
@@ -26,6 +27,10 @@ public class Filme {
 
     public int getAno() {
         return ano;
+    }
+
+    public List<Pessoa> getElenco() {
+        return Collections.unmodifiableList(elenco);
     }
 
     public void adicionarPessoaAoElenco(Pessoa pessoa) {
